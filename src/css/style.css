@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+.corpo{
+    font-family: "roboto";
+    height: 100vh;
+    background-color: #000;
+}
+
+.container{
+    padding: 35px;
+    background-color: #F7F7F7;
+    display: grid;
+    grid:
+    "principal propaganda" 56px
+    "principal lista" 359px /
+    543px 270px;
+    grid-gap: 20px 17px;
+    
+}
+
+.principal{
+    grid-area: principal;
+}
+
+.propaganda{
+    grid-area: propaganda;
+}
+
+.lista-de-videos{
+    grid-area: lista;
+}
+
+.corpo, .propaganda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video, .propaganda{
+    background-color: #C4C4C4;
+}
+
+.video.destaque{
+    height: 217px;
+    margin-bottom: 12px;
+}
+
+.principal .descricao h1{
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.principal .vizualizacao, .descricao h2{
+    font-size: 14px;
+}
+
+.descricao-principal{
+    font-size: 16px;
+    margin-top: 9px;
+}
+
+.propaganda, li .descricao{
+    font-size: 11px;
+}
+
+li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+li .video{
+    width: 101px;
+    height: 71px;
+    margin-right: 5px;
+}
+
+li .descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
