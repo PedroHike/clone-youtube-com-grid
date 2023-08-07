@@ -30,52 +30,53 @@
     grid-area: lista;
 }
 
-.corpo, .propaganda{
+.corpo{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.video, .propaganda{
-    background-color: #C4C4C4;
+.corpo .container{
+    width: 900px;
+    height: 415px;
 }
 
-.video.destaque{
-    height: 217px;
+.corpo .container .principal video{
+    border: 1px solid lightgray;
     margin-bottom: 12px;
+    height: 217px;
 }
 
-.principal .descricao h1{
+.corpo .container .principal .descricao h1{
     font-size: 18px;
     margin-bottom: 7px;
 }
 
-.principal .vizualizacao, .descricao h2{
+.corpo .container .principal .descricao .visualizacao,
+.corpo .container .lista-de-videos .descricao h2{
     font-size: 14px;
 }
 
-.descricao-principal{
+.corpo .container .principal .descricao .descricao-principal{
     font-size: 16px;
+    max-width: 538px;
     margin-top: 9px;
 }
 
-.propaganda, li .descricao{
+.corpo .container .lista-de-videos .item-lista{
+    display: flex;
+}
+
+.corpo .container .lista-de-videos .item-lista img{
+    margin: 0 4px 16px 0;
+}
+
+.corpo .container .lista-de-videos .item-lista h2{
+    margin-bottom: 7px;
+}
+
+
+.corpo .container .lista-de-videos .item-lista p{
     font-size: 11px;
-}
-
-li{
-    display: flex;
-    margin-bottom: 16px;
-}
-
-li .video{
-    width: 101px;
-    height: 71px;
-    margin-right: 5px;
-}
-
-li .descricao{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-bottom: 5px;
 }
